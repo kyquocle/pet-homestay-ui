@@ -1,0 +1,31 @@
+$bg-color: rgb(3, 3, 3);
+
+
+ul {
+    background-color: $bg-color;
+    overflow: hidden;
+    margin: 0;
+    padding: 2px;
+}
+
+li {
+    display: inline-block;
+    padding: 16px 14px;
+
+    a {
+        display: block;
+        color: aliceblue;
+        text-decoration: none;
+        text-align: center;
+       
+    }
+
+    &:hover{
+        background-color: rgb(225, 127, 255);
+    }
+
+    &.b {
+        text-align: center;
+    }
+}
+
