@@ -11,8 +11,8 @@ class PetService {
         return axios.post(PET_API_URL, pet);
     }
 
-    deletePetById(id) {
-        return axios.delete(PET_API_URL + "/" + id);
+    deletePetById(petId) {
+        return axios.delete(PET_API_URL + "/" + petId);
     }
 }
 
