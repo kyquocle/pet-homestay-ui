@@ -10,6 +10,10 @@ class PetService {
     addPet(pet) {
         return axios.post(PET_API_URL, pet);
     }
+
+    deletePetById(id) {
+        return axios.delete(PET_API_URL + "/" + id);
+    }
 }
 
 export default new PetService();
