@@ -63,7 +63,7 @@ const PetList = () => {
 
                       <td>
                         <a href="/">Update</a>
-                        <a href="/" onClick={(e,petId) => deletePetById(pet.petId)}>Delete</a>
+                        <a href="#" onClick={() => deletePetById(pet.petId)}>Delete</a>
                       </td>
                       </tr>
                   ))}
