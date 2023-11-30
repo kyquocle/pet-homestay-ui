@@ -2,9 +2,20 @@ import React from 'react'
 import '../component/PetList.scss'
 import { useState, useEffect } from "react";
 import axios from "axios";
+import PetService from "../service/PetService.js"
 
 const PetList = () => {
   const [petData, setPetData] = useState(([]))
+
+  const deletePetById = async (petId) => {
+    try {
+        await PetService.deletePetById(petId);
+        setPetData(petData.filter(pet => pet.petId !== petId));
+    } catch (error) {
+        console.error('Error deleting pet:', error);
+    }
+}
+  
 
   useEffect(() => {
     const fetchData = async () => {
@@ -52,7 +63,7 @@ const PetList = () => {
 
                       <td>
                         <a href="/">Update</a>
-                        <a href="/">Delete</a>
+                        <a href="/" onClick={(e,petId) => deletePetById(pet.petId)}>Delete</a>
                       </td>
                       </tr>
                   ))}
