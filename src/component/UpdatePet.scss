@@ -1,0 +1,52 @@
+.container-update {
+    width: 400px;
+    margin: 80px auto; 
+    padding: 100px;
+    border-collapse: collapse;
+    border: 1px solid rgb(44, 46, 44);
+    border-radius: 10px; /* Add rounded corners */
+    background-color: rgb(255, 241, 223);
+    
+    .h1-up{
+        font-size: 30px;
+        margin-top: -50px;
+        color: rgb(138, 67, 204);
+        // font-weight: 500;
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+    }
+    .inp {
+        width: 100%;
+        padding: 10px;
+        margin-top: 6px;
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+
+    .label{
+        font-size: 19px;
+        font-weight: 400; 
+    }
+
+    .button-up {
+        background-color: rgb(18, 215, 133);
+        margin-top: 15px;
+        padding: 15px;
+        border-radius: 10px; /* Add rounded corners */
+        &:hover{
+            background-color: rgb(43, 169, 85);
+        }
+    }
+
+    
+    .button-de {
+        background-color: rgb(226, 41, 41);
+        margin-top: 15px;
+        padding: 15px;
+        margin-left: 20px;
+
+        border-radius: 10px; /* Add rounded corners */
+        &:hover{
+            background-color: rgb(183, 31, 31);
+        }
+    }
+}
